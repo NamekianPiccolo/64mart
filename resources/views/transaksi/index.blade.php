@@ -261,11 +261,11 @@
 
                             const input_checkout =
                                 `
-                            <input type="text" name="id_produk[]" value="${id_produk}">
-                            <input type="text" name="harga_jual[]" value="${harga_produk}">
-                            <input type="text" name="kuantitas[]" value="${kuantitas}">
-                            <input type="text" name="subtotal[]" value="${subtotal}">
-                            <input type="text" name="id_user" value="{{ auth()->user()->id }}">
+                            <input type="hidden" name="id_produk[]" value="${id_produk}">
+                            <input type="hidden" name="harga_jual[]" value="${harga_produk}">
+                            <input type="hidden" name="kuantitas[]" value="${kuantitas}">
+                            <input type="hidden" name="subtotal[]" value="${subtotal}">
+                            <input type="hidden" name="id_user" value="{{ auth()->user()->id }}">
                             `;
                             $('#form-checkout').append(input_checkout);
 
