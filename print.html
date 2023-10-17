@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Struk Pembelian</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f4f4f4;
+    }
+
+    .struk-table {
+      border-collapse: collapse;
+      width: 300px;
+      background-color: #fff;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .struk-table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .logo-container img {
+      max-width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto 15px;
+    }
+
+    .header {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .info, .item, .footer {
+      margin-bottom: 15px;
+    }
+
+    .info span, .item span, .footer span {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .footer-total {
+      color: #e44d26;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <table class="struk-table">
+    <tr>
+      <th colspan="2">Struk Pembelian</th>
+    </tr>
+    <tr>
+      <td colspan="2" class="logo-container">
+        <img src="2023101719024283.jpg" alt="64 Mart Logo">
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="header">64 MART</td>
+    </tr>
+    <tr>
+      <td colspan="2" class="info">
+        <span>Tanggal: 17 Oktober 2023</span>
+        <span>Nama Perusahaan: 64 Mart</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="item">
+        <span>Ultra Milk</span>
+        <span>Jumlah: 2</span>
+        <span>Subtotal: Rp5.000</span>
+        <span>Diskon: Rp00</span>
+        <span>Total Harga: Rp10.000</span>
+      </td>
+    </tr>
+    <!-- Tambahkan baris untuk item lain jika diperlukan -->
+    <tr>
+      <td colspan="2" class="footer">
+        <span>Total Pembelian: Rp10.000</span>
+        <span>Pembayaran: RP20.000</span>
+        <span class="footer-total">Kembalian: Rp30.000</span>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
